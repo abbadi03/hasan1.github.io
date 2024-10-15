@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Alhasan Al-Mahameed | 152488</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #8B4513;
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 250px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .name-major {
+            max-width: 400px;
+            padding: 20px;
+            border: 5px solid #FFC107;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #FFC107;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            transform: scale(1.1);
+        }
+
+        section {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h3 {
+            text-align: center;
+            color: #FFC107;
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            list-style-type: none;
+            padding: 0;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .contact-info {
+            font-size: 20px;
+            margin: 20px 0;
+            color: white;
+        }
+
+        .facebook-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #3b5998;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .facebook-link:hover {
+            background-color: #2d4373;
+            transform: scale(1.05);
+        }
+
+        .form-container {
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px dashed #FFC107;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+
+        .form-container input:focus, .form-container select:focus, .form-container textarea:focus {
+            border: 2px solid #FFC107;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #004494;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="me.jpg" alt="Me" class="profile-pic">     
+        <div class="name-major">
+            <h1>Abu Alhasan Al-Mahameed</h1>
+            <h2>Cyber Security</h2>
+            <nav>
+                <a href="#contact-section">Contact</a> | 
+                <a href="#skills-section">Skills</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="skills-section">
+        <h3>Skills and Experience</h3>
+        <ul class="skills">
+            <li>Certified SOC Analyst</li>
+            <li>CTF Player</li>
+            <li>Video Games PRO Player</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Software</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td><a href="https://www.python.org" target="_blank">Learn More</a></td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Learn More</a></td>
+            </tr>
+            <tr>
+                <td>TryHackMe</td>
+                <td><a href="https://tryhackme.com" target="_blank">Learn More</a></td>
+            </tr>
+            <tr>
+                <td>Linux</td>
+                <td><a href="https://www.linux.org" target="_blank">Learn More</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact-section">
+        <h3>Contact Information</h3>
+        <p class="contact-info">
+            <strong>Email:</strong> hasan005948@gmail.com<br>
+            <strong>Phone:</strong> +962 790988277
+        </p>
+        <a class="facebook-link" href="https://facebook.com/hassouuno" target="_blank">Visit My Facebook</a>
+
+        <div class="form-container">
+            <h3>Contact Me</h3>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select required>
+                    <option value="" disabled selected>Select Your Country</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Palastine">Palastine</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Others">Others</option>
+                </select>
+                <textarea rows="4" placeholder="Your Comments" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p class="contact-info">
+            Feel free to reach out via the contact information above!
+        </p>
+    </footer>
+</body>
+</html>
